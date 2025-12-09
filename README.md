@@ -1,226 +1,151 @@
-# **AIssue**
+# 🚀 AIssue – SW 교육생을 위한 AI 기반 코드/에러 해결 커뮤니티
 
-### *SW교육을 위한 AI 기반 코드/에러 해결 커뮤니티*
+**AIssue**는 SW 교육 과정에서 가장 많이 발생하는 문제인  
+> **“에러가 나왔는데 어디에 물어봐야 할지 모르겠어요”**  
+를 해결하기 위해 개발된 **AI 기반 코드/에러 리뷰 플랫폼**입니다.
 
----
-
-## ❓ **실습 중 이런 경험, 해본 적 있나요?**
-
-- 🤯 에러 메시지가 무슨 말인지 모르겠어요
-- 🙋‍♀️ 누구에게 질문해야 할지 막막해요
-- 🧑‍💻 같은 에러를 반복해서 검색하게 돼요
-
----
-
-## ✅ **AIssue에서 해결하세요!**
-
-### 🔹 **AI 코드 챗봇**
-
-> 에러, 로그를 입력하면 OpenAI가 실시간으로 해결 방안을 제시해줘요!
-> 
-
----
-
-### 🔹 **AI 답변 → 게시글 자동 업로드**
-
-> 유용한 AI 답변은 요약되어 게시판에 자동 업로드되어
-> 
-> 
-> 다른 사용자들도 쉽게 참고할 수 있어요.
-> 
-
----
-
-### 🔹 **답변 수준 선택 가능**
-
-> 초보자부터 전문가까지, 나에게 맞는 답변을 선택할 수 있어요.
-> 
-> 
-> 예시:
-> 
-> - 🐣 초보자용 설명
-> - 🧠 전문가 수준 코드 리뷰
-> - 🛠️ 프롬프트 직접 설정 (예: “표로 비교해줘”)
-
----
-
-### 🔹 **커뮤니티 기능 제공**
-
-> 같은 문제를 겪은 학우들과 소통하고
-> 
-> 
-> 직접 질문과 답변을 남길 수 있어요.
-> 
-
----
-
-## 💡 **AIssue의 장점**
-
-- ⚡ **빠르게 프로토타입 제작 및 서비스 배포**
-- 🎯 **SW 교육생이라는 명확한 사용자층 확보**
-- 📈 **실시간 트래픽, 데이터 수집/보완 경험 가능**
-
----
-
-> 💬 "AI와 커뮤니티의 힘으로, 더 똑똑하고 효율적인 SW 학습을 시작해보세요!" 🚀
-> 
-
----
+SW 교육생에게 익숙한 *Jitsi, Slack, 오픈채팅방* 등 여러 도구로 흩어져 있던 질문 환경을 통합하여  
+**한곳에서 학습 · 질문 · 소통 · 에러 해결이 가능한 서비스**를 목표로 했습니다.
 
 
-## ✅ 사용 기술 스택
+## 🌟 주요 기능
 
-## 🚀 Framework
+### 🧠 OpenAI 기반 AI 코드/에러 챗봇
+- 에러/로그/코드를 입력하면 실시간 해결 방안 제공  
+- *초보자 / 전문가 / 커스텀* 등 **답변 수준 선택 기능**  
+- “표로 비교해서 설명해줘”, “코드만 보여줘” 등 **프롬프트 커스텀 가능**
+
+
+### 📝 AI 답변 → 게시글 자동 요약 업로드
+- 사용자가 AI 답변을 **채택**하면  
+  → 핵심 내용만 요약된 **게시글 자동 생성**
+- 언어 / 에러 유형 / 주차 카테고리 자동 분류  
+- 다른 사용자도 참고 가능한 **지식 베이스** 역할
+
+
+
+### 💬 SW 교육생 전용 커뮤니티 게시판
+- 일반 질문 게시판  
+- 공지 게시판  
+- AI 답변 전용 게시판  
+- 학우 간의 자연스러운 소통과 협업 지원
+
+
+
+### 📊 관리자 통계 대시보드
+- 전체 게시글/사용자 활동 통계 시각화  
+- 주차별/언어별/에러 유형별 AI 답변 통계  
+- **Prometheus + Grafana** 기반 실시간 모니터링  
+- 사용자 경험 기반 서비스 품질 개선 지원
+
+
+
+### ⚙️ 실서비스 운영 및 성능 개선 경험
+AIssue는 단순한 토이 프로젝트가 아니라, 실제로 배포하여 사용자를 확보한 **실서비스 프로젝트**입니다.
+
+- **JMeter 부하 테스트 진행**
+  - 1초 20요청 평균 응답: **45.9초**
+  - 1초 4요청 평균 응답: **38.6초**
+
+- OpenAI 요청 집중으로 인해 응답 지연 발생 → 이를 해결하기 위해  
+  **OpenAI 전용 Spring Boot 서비스 분리 + RabbitMQ 기반 분산 처리 아키텍처** 설계
+
+이 경험을 통해 실전 수준의  
+**트래픽 처리, API 지연 대응, 서비스 운영 능력**을 길렀습니다.
+
+
+
+## 🏗️ 기술 스택 (Two-Line Style)
+
+### 🖥️ Frontend
+<p>
+  <!-- 아이콘 라인 -->
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="35" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="35" />
+</p>
+<p><b>React.js · JavaScript</b></p>
 
 ---
 
-<aside>
-<img src="notion://custom_emoji/21e3d82a-30c5-4006-a27d-511df98c9d33/1dd2c924-7edd-802a-8052-007a14442c72" alt="notion://custom_emoji/21e3d82a-30c5-4006-a27d-511df98c9d33/1dd2c924-7edd-802a-8052-007a14442c72" width="40px" /> **SpringBoot3**
-
-</aside>
-
-<aside>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnL6RSvqGaQKadF4Q5q2rnCpSrFH1atFw9eVYNarpROZUrqbbtuducsFRacmVkd28DKWw&usqp=CAU" alt="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnL6RSvqGaQKadF4Q5q2rnCpSrFH1atFw9eVYNarpROZUrqbbtuducsFRacmVkd28DKWw&usqp=CAU" width="40px" /> **React.js**
-
-</aside>
-
-## :code: Language
+### ⚙️ Backend
+<p>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="35" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="35" />
+</p>
+<p><b>Spring Boot 3 · Java 21 </b></p>
 
 ---
 
-<aside>
-<img src="notion://custom_emoji/21e3d82a-30c5-4006-a27d-511df98c9d33/1dd2c924-7edd-8070-8092-007a6fd2ab26" alt="notion://custom_emoji/21e3d82a-30c5-4006-a27d-511df98c9d33/1dd2c924-7edd-8070-8092-007a6fd2ab26" width="40px" /> **Java 21**
-
-</aside>
-
-<aside>
-<img src="notion://custom_emoji/21e3d82a-30c5-4006-a27d-511df98c9d33/1dd2c924-7edd-8000-9339-007a1b0cba2e" alt="notion://custom_emoji/21e3d82a-30c5-4006-a27d-511df98c9d33/1dd2c924-7edd-8000-9339-007a1b0cba2e" width="40px" /> **JavaScript**
-
-</aside>
-
-## ♾️  CI/CD
+### 🤖 AI
+<p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" width="32" />
+  <img src="https://img.shields.io/badge/OpenAI%20GPT%20API-412991?style=flat&logo=openai&logoColor=white" />
+</p>
+<p><b>OpenAI GPT API · AI 에러 분석 & 요약</b></p>
 
 ---
 
-<aside>
-<img src="notion://custom_emoji/21e3d82a-30c5-4006-a27d-511df98c9d33/1dd2c924-7edd-807d-9a99-007af7df0dba" alt="notion://custom_emoji/21e3d82a-30c5-4006-a27d-511df98c9d33/1dd2c924-7edd-807d-9a99-007af7df0dba" width="40px" /> **GitHub Actions**
-
-</aside>
-
-## :test:Test
-
----
-
-<aside>
-<img src="notion://custom_emoji/8697c70e-c576-4f25-8570-b40ef3453774/21447772-7d0a-804f-880c-007a80786b12" alt="notion://custom_emoji/8697c70e-c576-4f25-8570-b40ef3453774/21447772-7d0a-804f-880c-007a80786b12" width="40px" /> **JMeter**
-
-</aside>
-
-## 🛠  Tools
+### 🗄️ Database
+<p>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="35" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" width="35" />
+</p>
+<p><b>MySQL · Redis</b></p>
 
 ---
 
-<aside>
-<img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" width="40px" /> **Figma**
-
-</aside>
-
-<aside>
-<img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" alt="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" width="40px" /> **Git**
-
-</aside>
-
-<aside>
-<img src="attachment:66881ddd-7763-4aa9-96ae-9738c9db4aa5:intellj.jpg" alt="attachment:66881ddd-7763-4aa9-96ae-9738c9db4aa5:intellj.jpg" width="40px" />
-
-**Intellj**
-
-</aside>
-
-<aside>
-<img src="attachment:5d8fa99c-15a3-47e7-880e-d094601d988f:visualcode.jpg" alt="attachment:5d8fa99c-15a3-47e7-880e-d094601d988f:visualcode.jpg" width="40px" />
-
-**Visual Stdio Code**
-
-</aside>
-
-<aside>
-<img src="attachment:9d26ac3a-bac5-4a8b-b9b8-edcff17af4ed:cursorAI.jpg" alt="attachment:9d26ac3a-bac5-4a8b-b9b8-edcff17af4ed:cursorAI.jpg" width="40px" />
-
-**CursorAI**
-
-</aside>
-
-## 🛠  Technology
+### 🏗️ Infra
+<p>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="35" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" width="35" />
+</p>
+<p><b>Docker · Nginx</b></p>
 
 ---
 
-<aside>
-<img src="notion://custom_emoji/21e3d82a-30c5-4006-a27d-511df98c9d33/1dd2c924-7edd-8045-bf16-007ae3325c18" alt="notion://custom_emoji/21e3d82a-30c5-4006-a27d-511df98c9d33/1dd2c924-7edd-8045-bf16-007ae3325c18" width="40px" /> **OpenAI GPT-4-turbo**
-
-</aside>
-
-<aside>
-<img src="notion://custom_emoji/21e3d82a-30c5-4006-a27d-511df98c9d33/1dd2c924-7edd-80c4-bcef-007a29f857b2" alt="notion://custom_emoji/21e3d82a-30c5-4006-a27d-511df98c9d33/1dd2c924-7edd-80c4-bcef-007a29f857b2" width="40px" /> **Nginx**
-
-</aside>
-
-<aside>
-<img src="notion://custom_emoji/21e3d82a-30c5-4006-a27d-511df98c9d33/1d02c924-7edd-805d-a404-007ac4621d6a" alt="notion://custom_emoji/21e3d82a-30c5-4006-a27d-511df98c9d33/1d02c924-7edd-805d-a404-007ac4621d6a" width="40px" /> **Docker**
-
-</aside>
-
-## :database: Database
+### 🔄 CI/CD
+<p>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="35" />
+  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat&logo=githubactions&logoColor=white" />
+</p>
+<p><b>GitHub Actions</b></p>
 
 ---
 
-<aside>
-<img src="notion://custom_emoji/21e3d82a-30c5-4006-a27d-511df98c9d33/1dd2c924-7edd-8047-a3c8-007afb566a0a" alt="notion://custom_emoji/21e3d82a-30c5-4006-a27d-511df98c9d33/1dd2c924-7edd-8047-a3c8-007afb566a0a" width="40px" /> **MySQL**
-
-</aside>
-
-<aside>
-<img src="notion://custom_emoji/21e3d82a-30c5-4006-a27d-511df98c9d33/1dd2c924-7edd-80f9-aa52-007a12a42171" alt="notion://custom_emoji/21e3d82a-30c5-4006-a27d-511df98c9d33/1dd2c924-7edd-80f9-aa52-007a12a42171" width="40px" /> **Redis**
-
-</aside>
-
-## 👥Collaboration
+### 📊 Monitoring
+<p>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" width="35" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" width="35" />
+</p>
+<p><b>Prometheus · Grafana</b></p>
 
 ---
 
-<aside>
-<img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="40px" /> **GitHub**
-
-</aside>
-
-<aside>
-<img src="https://cdn.icon-icons.com/icons2/2389/PNG/512/notion_logo_icon_145025.png" alt="https://cdn.icon-icons.com/icons2/2389/PNG/512/notion_logo_icon_145025.png" width="40px" /> **Notion**
-
-</aside>
-
-<aside>
-<img src="notion://custom_emoji/21e3d82a-30c5-4006-a27d-511df98c9d33/1dd2c924-7edd-80f3-a914-007a33de801e" alt="notion://custom_emoji/21e3d82a-30c5-4006-a27d-511df98c9d33/1dd2c924-7edd-80f3-a914-007a33de801e" width="40px" /> **Google Drive**
-
-</aside>
-
-## :monitoring: Monitoring
+### 🛠️ Tools
+<p>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" width="35" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="35" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" width="35" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="35" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg" width="35" />
+</p>
+<p><b>Figma · Git · IntelliJ · VS Code · Notion</b></p>
 
 ---
 
-<aside>
-<img src="notion://custom_emoji/8697c70e-c576-4f25-8570-b40ef3453774/21447772-7d0a-8014-9f65-007ad57523e3" alt="notion://custom_emoji/8697c70e-c576-4f25-8570-b40ef3453774/21447772-7d0a-8014-9f65-007ad57523e3" width="40px" /> **Prometheus**
+### 🧪 Test
+<p>
+  <img width="90" height="29" alt="image" src="https://github.com/user-attachments/assets/0c0aa467-c643-43c4-b4a4-b64363a8b1d0" />
+</p>
+<p><b>JMeter</b></p>
 
-</aside>
+---
 
-<aside>
-<img src="notion://custom_emoji/8697c70e-c576-4f25-8570-b40ef3453774/21447772-7d0a-804f-8d3b-007a842e2f72" alt="notion://custom_emoji/8697c70e-c576-4f25-8570-b40ef3453774/21447772-7d0a-804f-8d3b-007a842e2f72" width="40px" /> **Grafana**
 
-</aside>
+## 🧩 시스템 아키텍처
+<img width="707" height="764" alt="Frame 1" src="https://github.com/user-attachments/assets/16d1ea9e-8db6-4f13-a0bd-1ca36d9ce450" width="1000"/>
 
-<aside>
+### 자료파일
+file:///C:/Users/sonyo/Desktop/%EC%B7%A8%EC%A4%80%20%EC%9E%90%EB%A3%8C/%EC%B0%B8%EA%B3%A0%20%EC%9E%90%EB%A3%8C/%EB%B0%9C%ED%91%9Cppt.pdf
 
-### ↗️ Hana Project Team 노션 페이지
 
-[Hana Bridge Project](https://www.notion.so/Hana-Bridge-Project-217477727d0a809c907ecae8fd9205e2?pvs=21)
-
-</aside>
