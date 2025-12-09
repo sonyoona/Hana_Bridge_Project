@@ -145,7 +145,4 @@ AIssue는 단순한 토이 프로젝트가 아니라, 실제로 배포하여 사
 ## 🧩 시스템 아키텍처
 <img width="707" height="764" alt="Frame 1" src="https://github.com/user-attachments/assets/16d1ea9e-8db6-4f13-a0bd-1ca36d9ce450" width="1000"/>
 
-### 자료파일
-file:///C:/Users/sonyo/Desktop/%EC%B7%A8%EC%A4%80%20%EC%9E%90%EB%A3%8C/%EC%B0%B8%EA%B3%A0%20%EC%9E%90%EB%A3%8C/%EB%B0%9C%ED%91%9Cppt.pdf
-
 
