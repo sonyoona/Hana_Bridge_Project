@@ -8,15 +8,15 @@ SW 교육생에게 익숙한 *Jitsi, Slack, 오픈채팅방* 등 여러 도구�
 **한곳에서 학습 · 질문 · 소통 · 에러 해결이 가능한 서비스**를 목표로 했습니다.
 
 
-## 🌟 주요 기능
+## 주요 기능
 
-### 🧠 OpenAI 기반 AI 코드/에러 챗봇
+### OpenAI 기반 AI 코드/에러 챗봇
 - 에러/로그/코드를 입력하면 실시간 해결 방안 제공  
 - *초보자 / 전문가 / 커스텀* 등 **답변 수준 선택 기능**  
 - “표로 비교해서 설명해줘”, “코드만 보여줘” 등 **프롬프트 커스텀 가능**
 
 
-### 📝 AI 답변 → 게시글 자동 요약 업로드
+### AI 답변 → 게시글 자동 요약 업로드
 - 사용자가 AI 답변을 **채택**하면  
   → 핵심 내용만 요약된 **게시글 자동 생성**
 - 언어 / 에러 유형 / 주차 카테고리 자동 분류  
@@ -24,7 +24,7 @@ SW 교육생에게 익숙한 *Jitsi, Slack, 오픈채팅방* 등 여러 도구�
 
 
 
-### 💬 SW 교육생 전용 커뮤니티 게시판
+### SW 교육생 전용 커뮤니티 게시판
 - 일반 질문 게시판  
 - 공지 게시판  
 - AI 답변 전용 게시판  
@@ -32,7 +32,7 @@ SW 교육생에게 익숙한 *Jitsi, Slack, 오픈채팅방* 등 여러 도구�
 
 
 
-### 📊 관리자 통계 대시보드
+### 관리자 통계 대시보드
 - 전체 게시글/사용자 활동 통계 시각화  
 - 주차별/언어별/에러 유형별 AI 답변 통계  
 - **Prometheus + Grafana** 기반 실시간 모니터링  
@@ -40,7 +40,7 @@ SW 교육생에게 익숙한 *Jitsi, Slack, 오픈채팅방* 등 여러 도구�
 
 
 
-### ⚙️ 실서비스 운영 및 성능 개선 경험
+### 실서비스 운영 및 성능 개선 경험
 AIssue는 단순한 토이 프로젝트가 아니라, 실제로 배포하여 사용자를 확보한 **실서비스 프로젝트**입니다.
 
 - **JMeter 부하 테스트 진행**
@@ -55,9 +55,9 @@ AIssue는 단순한 토이 프로젝트가 아니라, 실제로 배포하여 사
 
 
 
-## 🏗️ 기술 스택 (Two-Line Style)
+## 기술 스택 (Two-Line Style)
 
-### 🖥️ Frontend
+### Frontend
 <p>
   <!-- 아이콘 라인 -->
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="35" />
@@ -67,7 +67,7 @@ AIssue는 단순한 토이 프로젝트가 아니라, 실제로 배포하여 사
 
 ---
 
-### ⚙️ Backend
+### Backend
 <p>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="35" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="35" />
@@ -76,7 +76,7 @@ AIssue는 단순한 토이 프로젝트가 아니라, 실제로 배포하여 사
 
 ---
 
-### 🤖 AI
+### AI
 <p>
   <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" width="32" />
   <img src="https://img.shields.io/badge/OpenAI%20GPT%20API-412991?style=flat&logo=openai&logoColor=white" />
@@ -85,7 +85,7 @@ AIssue는 단순한 토이 프로젝트가 아니라, 실제로 배포하여 사
 
 ---
 
-### 🗄️ Database
+### Database
 <p>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="35" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" width="35" />
@@ -94,7 +94,7 @@ AIssue는 단순한 토이 프로젝트가 아니라, 실제로 배포하여 사
 
 ---
 
-### 🏗️ Infra
+### Infra
 <p>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="35" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" width="35" />
@@ -103,7 +103,7 @@ AIssue는 단순한 토이 프로젝트가 아니라, 실제로 배포하여 사
 
 ---
 
-### 🔄 CI/CD
+### CI/CD
 <p>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="35" />
   <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat&logo=githubactions&logoColor=white" />
@@ -112,7 +112,7 @@ AIssue는 단순한 토이 프로젝트가 아니라, 실제로 배포하여 사
 
 ---
 
-### 📊 Monitoring
+### Monitoring
 <p>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" width="35" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" width="35" />
@@ -121,7 +121,7 @@ AIssue는 단순한 토이 프로젝트가 아니라, 실제로 배포하여 사
 
 ---
 
-### 🛠️ Tools
+### Tools
 <p>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" width="35" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="35" />
@@ -133,7 +133,7 @@ AIssue는 단순한 토이 프로젝트가 아니라, 실제로 배포하여 사
 
 ---
 
-### 🧪 Test
+### Test
 <p>
   <img width="90" height="29" alt="image" src="https://github.com/user-attachments/assets/0c0aa467-c643-43c4-b4a4-b64363a8b1d0" />
 </p>
